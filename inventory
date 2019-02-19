@@ -17,7 +17,7 @@ RESTIC_PASSWORD=
 [group2:vars]
 RESTIC_PASSWORD=
 
-[group2:vars]
+[group3:vars]
 RESTIC_PASSWORD=
 
 [all:vars]
