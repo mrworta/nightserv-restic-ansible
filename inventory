@@ -1,0 +1,27 @@
+
+[group1]
+myhost1
+myhost2
+
+[group2]
+myhosta
+myhostb
+myhostc
+
+[group3]
+myhostspecial 
+
+[group1:vars]
+RESTIC_PASSWORD=
+
+[group2:vars]
+RESTIC_PASSWORD=
+
+[group2:vars]
+RESTIC_PASSWORD=
+
+[all:vars]
+# fqdn+port
+S3_HOST=mys3.here.local:9000
+S3_USER=
+S3_SECRET=

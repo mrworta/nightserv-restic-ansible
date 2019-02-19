@@ -1,0 +1,15 @@
+---
+- hosts: group1
+  remote_user: root
+  roles:
+   - { role: nightserv-backup, BACKUP_PATH: "/opt /var /etc /root /home"}
+
+- hosts: group2
+  remote_user: root
+  roles:
+   - { role: nightserv-backup, BACKUP_PATH: "/opt /root /home"}
+
+- hosts: group3
+  remote_user: root
+  roles:
+   - { role: nightserv-backup, BACKUP_PATH: "/opt"}

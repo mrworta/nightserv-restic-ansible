@@ -1,0 +1,8 @@
+- debug:
+    msg: "Execute the backup of {{ BACKUP_PATH }} for {{ ansible_host }}..."
+- name: "working..."
+  shell: "/usr/bin/restic -r s3:{{ S3_HOST }}/{{ RESTIC_POOL }} backup {{ BACKUP_PATH }}"
+  environment:
+    AWS_ACCESS_KEY_ID: "{{ S3_USER }}"
+    AWS_SECRET_ACCESS_KEY: "{{ S3_SECRET }}" 
+    RESTIC_PASSWORD: "{{ RESTIC_PASSWORD }}"

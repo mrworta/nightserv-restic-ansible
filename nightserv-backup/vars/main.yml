@@ -1,0 +1,4 @@
+---
+# vars file for nightserv-backup
+
+RESTIC_POOL: "{{ group_names[0] }}"
